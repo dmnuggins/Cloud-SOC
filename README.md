@@ -1,5 +1,5 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC]()
+![Cloud Honeynet / SOC](https://github.com/dmnuggins/Cloud-SOC/blob/main/images/Cloud%20Honeynet%20%2B%20SOC.png)
 
 ## Introduction
 
@@ -12,10 +12,10 @@ In this project, I built a small-scale honeynet within Azure and collected log d
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram]()
+![Architecture Diagram](https://github.com/dmnuggins/Cloud-SOC/blob/main/images/Architecture%20Before%20Hardening_Security%20Controls.png)
 
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram]()
+![Architecture Diagram](https://github.com/dmnuggins/Cloud-SOC/blob/main/images/Architecture%20After%20Hardening_Security%20Controls.png)
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
@@ -32,10 +32,10 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin machine, and all other resources were protected by their built-in firewalls as well as Private Endpoint.
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows]()<br>
-![Linux Syslog Auth Failures]()<br>
-![Windows RDP/SMB Auth Failures]()<br>
-![MSSQL Auth Failures]()<br>
+![NSG Allowed Inbound Malicious Flows](https://github.com/dmnuggins/Cloud-SOC/blob/main/images/BEFORE_nsg-malicious-allowed-in.png)<br>
+![Linux Syslog Auth Failures](https://github.com/dmnuggins/Cloud-SOC/blob/main/images/BEFORE_linux-ssh-auth-fail.png)<br>
+![Windows RDP/SMB Auth Failures](https://github.com/dmnuggins/Cloud-SOC/blob/main/images/BEFORE_windows-rdp-auth-fail.png)<br>
+![MSSQL Auth Failures](https://github.com/dmnuggins/Cloud-SOC/blob/main/images/BEFORE_mssql-auth-fail.png)<br>
 
 ## Metrics Before Hardening / Security Controls
 
@@ -53,8 +53,9 @@ Stop Time 2023-10-15 00:51:06
 
 ## Attack Maps Before Hardening / Security Controls
 
-```All map queries, except for *NSG Allowed Inbound Malicious Flows* actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```<br>
-![NSG Allowed Inbound Malicious Flows]()<br>
+```All map queries, except for *NSG Allowed Inbound Malicious Flows* actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+
+![NSG Allowed Inbound Malicious Flows](https://github.com/dmnuggins/Cloud-SOC/blob/main/images/AFTER_nsg-malicious-allowed-in.png)<br>
 
 ## Metrics After Hardening / Security Controls
 
